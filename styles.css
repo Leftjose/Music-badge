@@ -1,0 +1,74 @@
+body {
+  background-color: #00003b;
+}
+
+.music-contaner {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  padding: 12px;
+  width: 50%;
+  margin: auto;
+  margin-top: 400px;
+}
+
+.art {
+  height: 150px;
+  width: 150px;
+  position: relative;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.text {
+  width: 320px;
+  margin-left: 24px;
+}
+
+.artist {
+  color: grey;
+}
+
+.overlay_box {
+  position: absolute;
+  inset: 0 0 0 0;
+  border-radius: 8px;
+  background-color: #00000055;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar {
+  width: 12px;
+  height: 20px;
+  background-color: white;
+  margin: 6px;
+  border-radius: 6px;
+  animation: bar 1400ms infinite;
+}
+
+.bar:nth-child(even) {
+  animation-delay: 700ms;
+}
+
+.title {
+    font-size: xx-large;
+}
+
+@keyframes bar {
+  0% {
+    height: 20px;
+  }
+  50% {
+    height: 48px;
+  }
+  100% {
+    height: 20px;
+  }
+}
